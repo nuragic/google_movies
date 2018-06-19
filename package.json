@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": "0.8.x",
@@ -15,6 +17,8 @@
     "apricot": "*",
     "jsdom": "*",
     "htmlparser": "*",
-    "tmdbv3": "*"
-  }
+    "tmdbv3": "*",
+    "snyk": "^1.83.0"
+  },
+  "snyk": true
 }
